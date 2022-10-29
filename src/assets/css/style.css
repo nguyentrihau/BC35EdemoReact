@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color-red{
+    color: red;
+    font-size: 20px;
+}
+.bg{
+
+    background-image: url('./img/avanger.jpg');
+    background-position: center;
+    background-repeat: repeat; 
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+.content_pic{
+    /* position: absolute; */
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0,0.5) ;
+}
