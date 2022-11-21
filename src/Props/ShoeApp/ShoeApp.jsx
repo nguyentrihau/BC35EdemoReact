@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProductItem from './ProductItem'
 
 const data =
 [
@@ -124,13 +125,20 @@ const data =
     } ]
 
 export default class ShoeApp extends Component {
+  renderProductItem =()=>{
+    return data.map((shoe,index)=>{
+      return <div className="col-4 mt-2" key={index}>
+        <ProductItem prod = {shoe} />
+      </div>
+    })
+  }
   render() {
     return (
       <div>
         <div className="container">
             <h3 className='text-center'>Shoe App</h3>
             <div className="row">
-
+              {this.renderProductItem()}
             </div>
         </div>
       </div>
