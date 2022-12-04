@@ -36,6 +36,17 @@ import Store from './StoreAPI/Store';
 import { Provider } from 'react-redux';
 import { store } from './redux/configStore';
 import ReduxDemo from './ReduxDemo/ReduxDemo';
+import BaiTapGameXucXac from './pages/BaiTapGameXucXac/BaiTapGameXucXac';
+import UseStateDemo from './pages/HooksDemo/UseStateDemo/UseStateDemo';
+import UseEffectDemo from './pages/HooksDemo/UseEffectDemo/UseEffectDemo';
+import DemoCategory from './pages/HooksDemo/UseEffectDemo/DemoCategory';
+import UseCallBackDemo from './pages/HooksDemo/UseCallBackDemo/UseCallBackDemo';
+import UseMemoDemo from './pages/HooksDemo/UseMemoDemo/UseMemoDemo';
+import UseRefDemo from './pages/HooksDemo/UseRefDemo/UseRefDemo';
+import UseRedux from './pages/HooksDemo/UseReduxDemo/UseRedux';
+import DemoUseNavigate from './pages/HookRouter/DemoUseNavigate';
+import DemoUseParams from './pages/DemoUseParams/DemoUseParams';
+import DemoUseSearchParams from './pages/HooksDemo/UseSearchParams/DemoUseSearchParams';
 
 //JSX
 
@@ -59,6 +70,19 @@ root.render(
                     <Route path='lifecycle' element={<Lifecycle />} />
                     <Route path='store' element={<Store />} />
                     <Route path='reduxdemo' element={<ReduxDemo/>} />
+                    <Route path='btgame' element={<BaiTapGameXucXac/>} />
+                    <Route path='hook-use-state' element={<UseStateDemo/>} />
+                    <Route path='hook-effect' element={<UseEffectDemo/>} />
+                    <Route path='democategory' element={<DemoCategory/>} />
+                    <Route path='usecallback' element={<UseCallBackDemo/>} />
+                    <Route path='hookusememo' element={<UseMemoDemo/>} />
+                    <Route path='hookuseref' element={<UseRefDemo/>} />
+                    <Route path='hookuseredux' element={<UseRedux/>} />
+                    <Route path='hookusenavigate' element={<DemoUseNavigate/>} />
+                    <Route path='detail'>
+                        <Route path=':id' element={<DemoUseParams/>}></Route>
+                    </Route>
+                    <Route path='hookusesearchparam' element={<DemoUseSearchParams/>} />
                     <Route path='*' element={<Navigate to="/page404" />} />
                 </Route>
 

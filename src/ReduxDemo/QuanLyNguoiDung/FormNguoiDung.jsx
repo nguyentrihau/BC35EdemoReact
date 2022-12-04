@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
  class FormNguoiDung extends Component {
     handleSubmit = (e) => {
@@ -12,7 +12,7 @@ import { connect } from 'react-redux'
         payload: { taiKhoan: taiKhoan, matKhau: matKhau } //object literal (ES6)
       }
   
-      this.props.dispatch(action)
+      this.props.dispatch(action);
     }
   render() {
     return (

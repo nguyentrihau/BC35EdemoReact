@@ -7,8 +7,10 @@ const stateDefault =[
 export const arrNguoiDUngReducer = (state = stateDefault,action)=>{
     switch(action.type){
         case 'THEM_NGUOI_DUNG':{
-            state.push(action.payload);
-            return [...state]; //immutable : tinh chat bat bien
+            const arrUserUpdate = [...state];
+            arrUserUpdate.push(action.payload); 
+            // state.push(action.payload);
+            return arrUserUpdate; //immutable : tinh chat bat bien
         }
         default:return state;
     }
