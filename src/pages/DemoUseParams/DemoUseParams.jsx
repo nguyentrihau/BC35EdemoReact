@@ -36,8 +36,7 @@ const DemoUseParams = () => {
       <div className='row'>
         {/* {prodDetail.relatedProducts?.map((item, index) => {
           // console.log(item,index);
-          return <>
-                    <div className='col-4' key={index}>
+          return <div className='col-4' key={index}>
             <div className='card'>
               <img src={item.image} alt='...' />
               <div className='card-body'>
@@ -47,8 +46,6 @@ const DemoUseParams = () => {
               </div>
             </div>
           </div>
-          </>
-
         })} */}
       </div>
 

@@ -52,6 +52,7 @@ export default class zHeaderHome extends Component {
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
                                     <NavLink className={({ isActive }) => isActive ? 'nav-link bg-warning text-white' : 'nav-link bg-success'} to="/hookusenavigate" style={({ isActive }) => isActive ? { color: 'red', borderRadius: '5px' } : {}}>Hook-Navigate</NavLink>
                                     <NavLink className={({ isActive }) => isActive ? 'nav-link bg-warning text-white' : 'nav-link bg-success'} to="/hookusesearchparam" style={({ isActive }) => isActive ? { color: 'red', borderRadius: '5px' } : {}}>Hook-Search-Param</NavLink>
+                                    <NavLink className={({ isActive }) => isActive ? 'nav-link bg-warning text-white' : 'nav-link bg-success'} to="/hookcustom" style={({ isActive }) => isActive ? { color: 'red', borderRadius: '5px' } : {}}>Hook-Custom</NavLink>
                                 </div>
                             </li>
                         </ul>

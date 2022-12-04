@@ -7,8 +7,8 @@ import { NavLink, useSearchParams } from 'react-router-dom'
 const DemoUseSearchParams = () => {
 
     const [searchParam, setSearchParam] = useSearchParams();
-    const [arrProduct, setArrProduct] = useState();
-    let keyword = searchParam.get('keyword');//khi duong dan url khong co tham so keyword = null;
+    const [arrProduct, setArrProduct] = useState([]);
+    let keyword = searchParam.get('k');//khi duong dan url khong co tham so keyword = null;
     const frm = useFormik({
         initialValues: {
             keyword: ''
@@ -17,7 +17,7 @@ const DemoUseSearchParams = () => {
             console.log(values);
             //khi nguoi dung go tu khoa va submit => dua tu khoa len url
             setSearchParam({
-                keyword: values.keyword
+                k: values.keyword
             })
         }
     });
@@ -46,11 +46,10 @@ const DemoUseSearchParams = () => {
             </form>
             <h3 className='m-2'>Ket qua tim kiem</h3>
             <div className="row">
-                <div className="col-3">
-                    {/* {arrProduct.map((prod, index) => {
-                        return <div key={index}>
+            {arrProduct.map((prod, index) => {
+                        return <div className='col-3' key={index}>
                             <div className="card">
-                                <img src={prod.image}" alt="..." />
+                                <img src={prod.image} alt="..." />
                             </div>
                             <div className="card-body">
                                 <p>{prod.name}</p>
@@ -58,9 +57,7 @@ const DemoUseSearchParams = () => {
                                 <NavLink to={`/detail/${prod.id}`} className="btn btn-success">View detail</NavLink>
                             </div>
                         </div>
-                    })} */}
-
-                </div>
+                    })}
             </div>
         </div>
     )

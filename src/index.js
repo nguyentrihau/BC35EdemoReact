@@ -47,6 +47,7 @@ import UseRedux from './pages/HooksDemo/UseReduxDemo/UseRedux';
 import DemoUseNavigate from './pages/HookRouter/DemoUseNavigate';
 import DemoUseParams from './pages/DemoUseParams/DemoUseParams';
 import DemoUseSearchParams from './pages/HooksDemo/UseSearchParams/DemoUseSearchParams';
+import DemoCustom from './pages/HookRouter/DemoCustom';
 
 //JSX
 
@@ -83,6 +84,7 @@ root.render(
                         <Route path=':id' element={<DemoUseParams/>}></Route>
                     </Route>
                     <Route path='hookusesearchparam' element={<DemoUseSearchParams/>} />
+                    <Route path='hookcustom' element={<DemoCustom/>} />
                     <Route path='*' element={<Navigate to="/page404" />} />
                 </Route>
 
