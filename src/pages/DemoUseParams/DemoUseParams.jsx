@@ -20,7 +20,7 @@ const DemoUseParams = () => {
   useEffect(() => {
     //call api
     getProductById(params.id);
-  },[])
+  },[params.id])
   return (
     <div className='container'>
       <div className="row mt-3">
@@ -34,7 +34,7 @@ const DemoUseParams = () => {
       </div>
       <h3 className='text-center'>Related product</h3>
       <div className='row'>
-        {/* {prodDetail.relatedProducts?.map((item, index) => {
+        {prodDetail.relatedProducts?.map((item, index) => {
           // console.log(item,index);
           return <div className='col-4' key={index}>
             <div className='card'>
@@ -46,7 +46,7 @@ const DemoUseParams = () => {
               </div>
             </div>
           </div>
-        })} */}
+        })}
       </div>
 
     </div>

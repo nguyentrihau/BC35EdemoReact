@@ -11,7 +11,7 @@ function DemoCategory() {
             url: 'https://shop.cyberlearn.vn/api/Product/getAllCategory',
             method: 'GET'
         })
-        //sau khi lay du lieu tu api ve thi setState cho arrCategory
+        //sau khi lay du lieu tu api ve thi setState cho arrCategory(lay ten hang~ giay)
         setArrCategory(result.data.content);
     }
     useEffect(() => {
@@ -31,7 +31,7 @@ function DemoCategory() {
             url: `https://shop.cyberlearn.vn/api/Product/getProductByCategory?categoryId=${id}`,
             method: 'GET'
         })
-        //sau khi lay du lieu tu api ve thi setState cho arrCategory
+        //sau khi lay du lieu tu api ve thi setState cho arrCategoryID(lay mang giay theo ten)
         setArrProduct(result.data.content);
     }
 

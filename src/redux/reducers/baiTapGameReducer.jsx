@@ -36,7 +36,7 @@ export const baiTapGameReducer = (state = stateDefault, action) => {
             for (const xx of arrXXNN) {
                 diem += xx.diem;
             }
-            if((diem > 11 && newState.diemCuoc == true) || (diem < 11 && newState.diemCuoc == false) ){
+            if((diem > 11 && newState.diemCuoc === true) || (diem < 11 && newState.diemCuoc === false) ){
                 newState.soBanThang +=1;
             }
             //cap nhat lai state
